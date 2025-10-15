@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src/main",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "allowImportingTsExtensions": false
+  },
+  "include": ["src/main/**/*"],
+  "references": [
+    {
+      "path": "../../packages/shared"
+    }
+  ]
+}
