@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Bookmark</title>
+  <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Save Bookmark</h1>
+      <div id="status-indicator" class="status-indicator">
+        <span class="status-dot" id="status-dot"></span>
+        <span class="status-text" id="status-text">Checking connection...</span>
+      </div>
+    </header>
+
+    <form id="bookmark-form">
+      <div class="form-group">
+        <label for="url">URL *</label>
+        <input 
+          type="url" 
+          id="url" 
+          name="url" 
+          required 
+          placeholder="https://example.com"
+        >
+        <span class="error-message" id="url-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="title">Title *</label>
+        <input 
+          type="text" 
+          id="title" 
+          name="title" 
+          required 
+          placeholder="Bookmark title"
+          maxlength="200"
+        >
+        <span class="error-message" id="title-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="tags">Tags</label>
+        <input 
+          type="text" 
+          id="tags" 
+          name="tags" 
+          placeholder="javascript, tutorial, webdev (comma-separated)"
+        >
+        <span class="help-text">Separate tags with commas</span>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        <textarea 
+          id="notes" 
+          name="notes" 
+          rows="4" 
+          placeholder="Add your notes here..."
+          maxlength="1000"
+        ></textarea>
+        <span class="char-count"><span id="notes-count">0</span>/1000</span>
+      </div>
+
+      <div class="form-group">
+        <label for="code-snippet">Code Snippet</label>
+        <textarea 
+          id="code-snippet" 
+          name="codeSnippet" 
+          rows="6" 
+          placeholder="Paste code snippet here..."
+          maxlength="5000"
+        ></textarea>
+        <span class="char-count"><span id="code-count">0</span>/5000</span>
+      </div>
+
+      <div class="button-group">
+        <button type="button" id="cancel-btn" class="btn btn-secondary">Cancel</button>
+        <button type="submit" id="save-btn" class="btn btn-primary">
+          <span id="save-text">Save</span>
+          <span id="save-spinner" class="spinner hidden"></span>
+        </button>
+      </div>
+    </form>
+
+    <div id="queue-info" class="queue-info hidden">
+      <div class="queue-message">
+        <svg class="queue-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span id="queue-count">0</span> bookmark(s) queued for sync
+      </div>
+    </div>
+
+    <div id="notification" class="notification hidden">
+      <span id="notification-text"></span>
+    </div>
+  </div>
+
+  <script src="../js/popup.js"></script>
+</body>
+</html>

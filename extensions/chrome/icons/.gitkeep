@@ -1,0 +1,3 @@
+# Icon files should be generated using build scripts
+# For now, you can use any 16x16, 32x32, 48x48, and 128x128 PNG images
+# Or use the generate-icons.sh script to create them from icon.svg
