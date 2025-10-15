@@ -1,4 +1,17 @@
 {
+  "name": "bookmark-backend-service",
+  "version": "0.1.0",
+  "description": "Backend service layer with REST and Electron IPC interfaces for bookmark and snippet management.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "bookmarks",
+    "electron",
+    "express",
+    "ipc"
   "name": "bookmarks-manager",
   "version": "1.0.0",
   "description": "SQLite-based bookmarks manager with FTS5 support",
@@ -19,6 +32,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
     "better-sqlite3": "^11.5.0"
   },
   "devDependencies": {
