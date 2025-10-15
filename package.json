@@ -1,0 +1,26 @@
+{
+  "name": "bookmark-backend-service",
+  "version": "0.1.0",
+  "description": "Backend service layer with REST and Electron IPC interfaces for bookmark and snippet management.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "bookmarks",
+    "electron",
+    "express",
+    "ipc"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}
