@@ -1,0 +1,65 @@
+# Build output
+build/
+dist/
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node (if adding npm scripts later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Extension packages
+*.crx
+*.xpi
+
+# Test files
+coverage/
+.nyc_output/
+
+# Environment files
+.env
+.env.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Extension development
+.web-extension-id
+web-ext-artifacts/

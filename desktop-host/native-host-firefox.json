@@ -1,0 +1,9 @@
+{
+  "name": "com.bookmarkmanager.native",
+  "description": "Native messaging host for Bookmark Manager",
+  "path": "/path/to/native-host.py",
+  "type": "stdio",
+  "allowed_extensions": [
+    "bookmarkmanager@example.com"
+  ]
+}

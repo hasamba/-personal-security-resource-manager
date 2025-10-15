@@ -1,0 +1,25 @@
+{
+  "name": "bookmark-manager-extensions",
+  "version": "1.0.0",
+  "description": "Browser extensions for Chrome and Firefox with desktop app communication",
+  "scripts": {
+    "build": "./scripts/build-all.sh",
+    "build:chrome": "./scripts/build-chrome.sh",
+    "build:firefox": "./scripts/build-firefox.sh",
+    "server": "python3 desktop-host/http-server.py",
+    "icons": "python3 scripts/generate-icons.py"
+  },
+  "keywords": [
+    "browser-extension",
+    "chrome-extension",
+    "firefox-addon",
+    "bookmarks",
+    "native-messaging"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
